@@ -30,11 +30,31 @@ function displayPortfolio (index) {
 }
 
 for (let i = 0; i < portfolioButtons.length; i++) {
-    portfolioButtons[i].addEventListener('click', (function() {
+    portfolioButtons[i].addEventListener('click', (function() {   
        displayPortfolio(i);
      }));
 };
 
+// portfolio
+const portfolioDetailsItems = document.querySelectorAll('.portfolio-details ul li'); // Selecting all li items
+const viewDetails = document.querySelectorAll('.view-details');
+const portfolioDetailsImage = document.querySelectorAll('.portfolio-details li img');
+
+function showDetails(index) {
+    portfolioDetailsImage[index].style.display = 'none';
+    viewDetails[index].style.display = 'block';
+}
+
+function hideDetails(index) {
+    portfolioDetailsImage[index].style.display = 'block';
+    viewDetails[index].style.display = 'none';
+}
+
+portfolioDetailsItems.forEach((item, index) => {
+    item.addEventListener('mouseenter', () => showDetails(index));
+    item.addEventListener('mouseleave', () => hideDetails(index));
+});
+// 
 
 const technicalSkillsHeadingElement = document.querySelector('#technical-skills');
 const nonTechnicalSkillsHeadingElement = document.querySelector('#non-technical-skills'); 

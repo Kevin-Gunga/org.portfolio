@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KEVIN GUNGA</title>
     <link rel="stylesheet" href="/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital@1&display=swap"
@@ -19,7 +19,7 @@
   </head>
   <body>
     <header id="main-header">
-      <a href="#" id="dev-title"><i class="fa-solid fa-chevron-left fa-1x"></i>software developer<i class="fa-solid fa-chevron-right fa-1x"></i></a>
+      <a href="#" id="dev-title">software developer</a>
       <nav>
         <ul>
           <li><a href="#portfolio">portfolio</a></li>
@@ -74,8 +74,12 @@
             <p>
               Greetings! I am a dedicated and results-driven software engineer
               with a passion for crafting efficient, user-friendly solutions to
-              complex problems.I specialize in <span class="speciality">Full-Stack Web Development</span>
-              ,<span class="speciality">Graphic Designing</span> and <span class="speciality">Cloud Computing</span> , and I am
+              complex problems.I specialize in
+              <span class="speciality">Full-Stack Web Development</span> ,<span
+                class="speciality"
+                >Graphic Designing</span
+              >
+              and <span class="speciality">Cloud Computing</span> , and I am
               committed to continuous learning and innovation. My work centers
               around creating software that not only meets technical standards
               but also enhances the overall user experience.
@@ -108,9 +112,35 @@
         <ul>
           <li class="portfolio-details">
             <ul>
+              <li><h3>exiera medical training college</h3></li>
+              <li><img src="./images/college.jpeg" alt="" /></li>
+              <!-- <li><button>view</button></li> -->
+              <div class="view-details">
+                <li>
+                  <p>
+                    The college focuses on providing quality education and
+                    practical skills necessary for students to excel in the
+                    healthcare sector.
+                  </p>
+                </li>
+                <div class="view-details-buttons">
+                  <li>
+                    <a
+                      href="https://github.com/Kevin-Gunga/MCG_ICT-_DEPT-_Web"
+                      target="_blank"
+                      >Code</a
+                    >
+                  </li>
+                  <li><a href="">Demo</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="portfolio-details">
+            <ul>
               <li><h3>migori county government ict department</h3></li>
               <li><img src="./images/mig_icon.png" alt="" /></li>
-              <li><button>view</button></li>
+              <!-- <li><button>view</button></li> -->
               <div class="view-details">
                 <li>
                   <p>
@@ -136,7 +166,7 @@
             <ul>
               <li><h3>mindful momentum community</h3></li>
               <li><img src="./images/mindful-momentum.png" alt="" /></li>
-              <li><button>view</button></li>
+              <!-- <li><button>view</button></li> -->
               <div class="view-details">
                 <li>
                   The community organization's website will serve as a welcoming
@@ -155,7 +185,7 @@
             <ul>
               <li><h3>kisii university heart association</h3></li>
               <li><img src="./images/kisii-heart.png" alt="" /></li>
-              <li><button>view</button></li>
+              <!-- <li><button>view</button></li> -->
               <div class="view-details">
                 <li>
                   This website market the association to the outside world.
@@ -224,9 +254,7 @@
                 <ul>
                   <li><h4>roles:</h4></li>
                   <li>
-                    <p>
-                      Developed a web-based machine learning application.                    
-                    </p>
+                    <p>Developed a web-based machine learning application.</p>
                   </li>
                   <li>
                     <p>
@@ -252,7 +280,9 @@
                 <ul>
                   <li><h4>roles:</h4></li>
                   <li><p>Manage Media platforms.</p></li>
-                  <li><p>Developed a website application for the association.</p></li>
+                  <li>
+                    <p>Developed a website application for the association.</p>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -305,17 +335,36 @@
       <h2>get in touch</h2>
       <ul>
         <li>
-          <form id="form" action="" method="POST"> 
+          <form id="form" action="" method="POST">
             <div id="form-details">
               <p id="auth-msg"></p>
               <label for="full_name"></label>
-              <input type="text" id="full_name" name="full_name" required placeholder="enter your full name"/>
+              <input
+                type="text"
+                id="full_name"
+                name="full_name"
+                required
+                placeholder="enter your full name"
+              />
 
               <label for="email"></label>
-              <input type="email" id="email" name="email" required placeholder="enter your email"/>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="enter your email"
+              />
 
               <label for="message"></label>
-              <textarea name="message" id="message" cols="30" rows="10" required placeholder="enter your message"></textarea>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                required
+                placeholder="enter your message here..."
+              ></textarea>
             </div>
             <button type="submit" class="form-button-element">submit</button>
           </form>
